@@ -15,18 +15,27 @@ const App = () => {
           timeAgo='Today at 4:45PM'
           text='Learnt a lot'
         />
+      </ApprovalCard>
+
+      <ApprovalCard>
         <CommentDetail
           author='Aniket'
           avatar={faker.image.avatar()}
           timeAgo='Today at 2:00AM'
           text='You are awesome!!'
         />
+      </ApprovalCard>
+
+      <ApprovalCard>
         <CommentDetail
           author='Valey'
           avatar={faker.image.avatar()}
           timeAgo='Today at 1:45PM'
           text='You are a life saver!'
         />
+      </ApprovalCard>
+
+      <ApprovalCard>
         <CommentDetail
           author='Parvez'
           avatar={faker.image.avatar()}
