@@ -3,10 +3,18 @@ import React from "react";
 class SearchBar extends React.Component {
   state = { term: "" };
 
+  // Arrow function ALWAYS binds the 'this' to the parent.
+  // Array function ALWAYS binds the 'this' to the parent.
+  onFormSubmit = event => {
+    event.preventDefault();
+
+    console.log(this.state.term);
+  };
+
   render() {
     return (
       <div className='ui segment'>
-        <form className='ui form'>
+        <form onSubmit={this.onFormSubmit} className='ui form'>
           <div className='field'>
             <label htmlFor='search'>Image Search</label>
             <input
