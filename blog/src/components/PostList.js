@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import UserHeader from "./UserHeader";
 import { fetchPosts } from "../actions";
 
 class PostList extends Component {
@@ -17,6 +18,7 @@ class PostList extends Component {
               <h2>{post.title}</h2>
               <p>{post.body}</p>
             </div>
+            <UserHeader userId={post.userId} />
           </div>
         </div>
       );
